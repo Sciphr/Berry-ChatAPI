@@ -75,7 +75,7 @@ const handleSubmit = async (e) => {
   loader(messageDiv);
 
   //* Fetching response from server -> bot response
-  const response = await fetch('https://berry-codex.onrender.com/', {
+  const response = await fetch('http://localhost:5000', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
